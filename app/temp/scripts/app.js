@@ -11378,7 +11378,7 @@ var StickyHeader = function () {
 	function StickyHeader() {
 		_classCallCheck(this, StickyHeader);
 
-		this.lazyImages = (0, _jquery2.default)(".lazyload");
+		//		this.lazyImages = $(".lazyload");
 		this.siteHeader = (0, _jquery2.default)(".site-header");
 		this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
 		this.createHeaderWaypoint();
@@ -11386,17 +11386,19 @@ var StickyHeader = function () {
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
-		this.refreshWaypoints();
+		//		this.refreshWaypoints();
 	}
 
+	/*
+ 	refreshWaypoints(){
+ 		this.lazyImages.load( function(){
+ 			Waypoint.refreshAll();
+ 		});
+ 	}
+ */
+
+
 	_createClass(StickyHeader, [{
-		key: 'refreshWaypoints',
-		value: function refreshWaypoints() {
-			this.lazyImages.load(function () {
-				Waypoint.refreshAll();
-			});
-		}
-	}, {
 		key: 'addSmoothScrolling',
 		value: function addSmoothScrolling() {
 			this.headerLinks.smoothScroll();
@@ -11875,17 +11877,16 @@ var Modal = function () {
 		key: "openModal",
 		value: function openModal() {
 
-			(0, _jquery2.default)(".modal").addClass("modal--is-visible");
+			//$(".modal").addClass("modal--is-visible");
 
-			//this.modal.addClass("modal--is-visible");  
-			//the above is not working check later
+			this.modal.addClass("modal--is-visible");
 			return false; // this is needed so that if view is below then browser takes to top instead of opening link
 		}
 	}, {
 		key: "closeModal",
 		value: function closeModal() {
-			(0, _jquery2.default)(".modal").removeClass("modal--is-visible");
-			//this.modal.removeClass("modal--is-visible");
+			//$(".modal").removeClass("modal--is-visible");		
+			this.modal.removeClass("modal--is-visible");
 			//the above is not working check later
 		}
 	}]);

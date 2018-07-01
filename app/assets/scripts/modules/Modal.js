@@ -29,16 +29,15 @@ class Modal{
 
 	openModal(){
 		
-		$(".modal").addClass("modal--is-visible");
+		//$(".modal").addClass("modal--is-visible");
 
-		//this.modal.addClass("modal--is-visible");  
-		//the above is not working check later
+		this.modal.addClass("modal--is-visible");  
 		return false; // this is needed so that if view is below then browser takes to top instead of opening link
 	}
 
 	closeModal(){
-		$(".modal").removeClass("modal--is-visible");		
-		//this.modal.removeClass("modal--is-visible");
+		//$(".modal").removeClass("modal--is-visible");		
+		this.modal.removeClass("modal--is-visible");
 		//the above is not working check later
 	}
 
