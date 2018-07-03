@@ -11386,9 +11386,16 @@ var StickyHeader = function () {
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
+<<<<<<< HEAD
 		//		this.refreshWaypoints();
+||||||| merged common ancestors
+		this.refreshWaypoints();
+=======
+		//	this.refreshWaypoints();
+>>>>>>> browser-support
 	}
 
+<<<<<<< HEAD
 	/*
  	refreshWaypoints(){
  		this.lazyImages.load( function(){
@@ -11398,6 +11405,15 @@ var StickyHeader = function () {
  */
 
 
+||||||| merged common ancestors
+=======
+	//refreshWaypoints(){
+	//	this.lazyImages.load( function(){
+	//		Waypoint.refreshAll();
+	//	});
+	//}
+
+>>>>>>> browser-support
 	_createClass(StickyHeader, [{
 		key: 'addSmoothScrolling',
 		value: function addSmoothScrolling() {
