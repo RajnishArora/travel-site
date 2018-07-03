@@ -11386,17 +11386,16 @@ var StickyHeader = function () {
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
-		this.refreshWaypoints();
+		//	this.refreshWaypoints();
 	}
 
+	//refreshWaypoints(){
+	//	this.lazyImages.load( function(){
+	//		Waypoint.refreshAll();
+	//	});
+	//}
+
 	_createClass(StickyHeader, [{
-		key: 'refreshWaypoints',
-		value: function refreshWaypoints() {
-			this.lazyImages.load(function () {
-				Waypoint.refreshAll();
-			});
-		}
-	}, {
 		key: 'addSmoothScrolling',
 		value: function addSmoothScrolling() {
 			this.headerLinks.smoothScroll();
